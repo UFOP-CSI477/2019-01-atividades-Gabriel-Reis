@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>	Games Shop - Cadastrar produto</title>
+</head>
+
+
+<body>
+	
+	<h1> Cadastro de produtos<h1>
+	<h2>Produtos:</h2>
+
+	<form method="post" action="validar.html"> 				<!-- method get (exibe dados do form na url, post é implicito) -->
+		<label for="nome"> Nome</label>
+		<input type="text" name="nome" id ="nome" placeholder="Nome"> <br>
+		
+		<label for="preco"> Preço</label>
+		<input type="preco" name="nome" id ="preco" placeholder="R$9.999,99"> <br>
+		
+		<label for="precoDesc"> Preço com desconto</label>
+		<input type="preco" name="precoDesc" id ="precoDesc" placeholder="R$8.9999,91"><br>
+
+		<label for="descricao"> Descrição</label>
+		<input type="text" name="Descricao" id ="descricao" placeholder="Venda de X, que faz Y"><br>
+
+		<label for="peso"> Peso </label>
+		<input type="number" name="peso" id ="peso" placeholder="71">
+
+		<label for="unidade de medida de peso"></label>
+		<select>name="unidade de medida de peso"
+			<option value="000">Unidade de medida:</option>
+			<option value="56">mg</option>
+			<option value="64">g</option>
+			<option value="653">Kg</option>
+			<option value="1">T</option>
+		</select><br>
+
+		<label for="estoqueInicial"> Estoque Inicial: </label>
+		<input type="number" name="estoqueInicial" id ="estoqueInicial" placeholder="Estoque Inicial"><br>
+
+		<label>Mercado:</label>
+		<input type="radio" id="mercadoExterno" name="Mercado">
+		<label for mercadoExterno>Mercado Externo</label>
+
+		<input type="radio" id="mercadoInterno" name="Mercado">
+		<label for mercadoInterno>Mercado Interno</label><br>
+
+		<label for="Fornecedor"></label>
+		<select>name="fornecedor"
+			<option value="000">Fornecedor:</option>
+			<option value="1">Activision</option>
+			<option value="653">Microsoft</option>
+			<option value="178">Nintendo</option>
+			<option value="567">Nordic</option>
+			<option value="832">NVidia</option>
+			<option value="1324">Sega</option>
+			<option value="64">Sony</option>
+			<option value="145">THQ</option>
+		</select><br>
+
+		<br>
+		<input type="submit" name="Enviar" value="Cadastrar">
+
+	</form>
+
+	<br>
+	<a href="Atv1.web.Inicial.html">Voltar</a><br>
+
+	
+</body>
+
+
+</html>
+
+
