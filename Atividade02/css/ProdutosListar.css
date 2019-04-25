@@ -1,0 +1,50 @@
+h1{
+  text-align: center;
+}
+
+img {
+  border-radius: 15px;
+  padding: 5px;
+  width: 150px;
+}
+
+table{
+  width: 100%;
+  margin:auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+
+th, td{
+  padding: 6px;
+}
+
+td{
+  font-size: 14pt;
+  font-family: tahoma;
+}
+
+thead tr{
+  background-color: DarkSlateGray;  /* #2F4F4F */
+  color: #dddddd;
+}
+
+thead tr:hover{
+  background-color: #0F2F2F;
+  color: #dddddd;
+}
+
+tbody tr:nth-child(3n+1){
+  background-color: lightgrey;
+}
+
+tbody tr:hover{
+  background-color: lightblue;
+}
+
+
+

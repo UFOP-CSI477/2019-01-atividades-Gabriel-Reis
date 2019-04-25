@@ -1,0 +1,43 @@
+h1{
+  text-align: center;
+}
+
+table{
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin:auto;
+}
+
+th, td{
+  padding: 6px;
+}
+
+td{
+  font-size: 14pt;
+  font-family: tahoma;
+}
+
+thead tr{
+  background-color: DarkSlateGray;  /* #2F4F4F */
+  color: #dddddd;
+}
+
+thead tr:hover{
+  background-color: #0F2F2F;
+  color: #dddddd;
+}
+
+tbody tr:nth-child(odd){
+  background-color: lightgrey;
+}
+
+tbody tr:hover{
+  background-color: lightblue;
+}
+
+
+

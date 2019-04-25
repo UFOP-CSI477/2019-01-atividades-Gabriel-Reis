@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>	Games Shop - Cadastrar produto</title>
+	<link rel="stylesheet" href="./css/ProdutosCadastrar.css">
+</head>
+
+
+<body>
+	
+	<h1> Cadastro de produtos</h1>
+
+	<form method="post" action="validar.html"> 				
+		<table>
+			<tr>
+				<td><label for="nome"> Nome</label></td>
+				<td><input type="text" name="nome" id ="nome" placeholder="Nome"></td>
+			</tr>
+			<tr>
+				<td><label for="preco"> Preço</label></td>
+				<td><input type="number" min="1" name="nome" id ="preco" placeholder="R$9.999,99"> </td>
+			</tr>
+			<tr>
+				<td><label for="precoDesc"> Preço com desconto</label></td>
+				<td><input type="number" min="1" name="precoDesc" id ="precoDesc" placeholder="R$8.9999,91"></td>
+			</tr>
+			<tr>
+				<td><label for="descricao"> Descrição</label></td>
+				<td><input type="textarea" name="Descricao" id ="descricao" placeholder="Venda de X, que faz Y"></td>
+			</tr>
+			<tr>
+				<td><label for="peso"> Peso </label></td>
+				<td><input type="number" min="1" name="peso" id ="peso" placeholder="71"></td>
+			</tr>
+			<tr>
+				<td><label for="unidade de medida de peso">Unidade de medida de peso</label></td>
+				<td><select>name="unidade de medida de peso"
+					<option value="000">Unidade de medida:</option>
+					<option value="56">mg</option>
+					<option value="64">g</option>
+					<option value="653">Kg</option>
+					<option value="1">T</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label for="estoqueInicial"> Estoque Inicial</label></td>
+				<td><input type="number" min="1" name="estoqueInicial" id ="estoqueInicial" placeholder="Estoque Inicial"></td>
+			</tr>
+			<tr>
+				<td><label>Mercado</label></td>
+				<td><input type="radio" id="mercadoInterno" name="Mercado">
+				<label for mercadoInterno>Mercado Interno</label><br>
+				<input type="radio" id="mercadoExterno" name="Mercado">
+				<label for mercadoExterno>Mercado Externo</label></td>
+
+			</tr>
+			<tr>
+				<td><label for="Fornecedor">Fornecedor</label></td>
+				<td><select>name="fornecedor"
+					<option value="000">Fornecedor:</option>
+					<option value="1">Activision</option>
+					<option value="653">Microsoft</option>
+					<option value="178">Nintendo</option>
+					<option value="567">Nordic</option>
+					<option value="832">NVidia</option>
+					<option value="1324">Sega</option>
+					<option value="64">Sony</option>
+					<option value="145">THQ</option>
+				</select></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="Enviar" value="Cadastrar"></td>
+			</tr>
+		</table>
+
+	</form>
+
+	<br>
+	<a href="Atv2.web.Index.html">Voltar</a><br>
+
+	
+</body>
+
+
+</html>
+
+

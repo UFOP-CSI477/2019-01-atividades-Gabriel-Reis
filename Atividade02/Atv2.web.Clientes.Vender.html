@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>	Games Shop - Vendas</title>
+	<link rel="stylesheet" href="./css/ClientesVender.css">
+</head>
+
+
+<body>
+	
+	<h1> Realizar uma venda</h1>
+
+	<form method="post" action="validar.html">
+			
+		<table>
+			<tr>
+				<td>
+					<label for="Produto">Produto</label>
+				</td>
+				<td>
+					<select>name="Produto"
+						<option value="000">Produto:</option>
+						<option value="56">Sony PlayStation 4 Slim 1tb + Controle Dualshock</option>
+						<option value="64">Microsoft Xbox One X 1TB 4K+ Controle sem Fio</option>
+						<option value="653">Game Darksiders III 3 + Chaveiro Exclusivo</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="quantidade"> Quantidade </label>
+				</td>
+				<td>
+					<input type="number" min="1" name="quantidade" id ="Quantidade" placeholder="1">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label> Forma de Pagamento:</label><br>
+				</td>
+				<td>
+					<input type="radio" name="formaDePagamento" id="Cartao">
+					<label for Cartao>Cartão</label>
+
+					<input type="radio" name="formaDePagamento" id="Boleto Bancario">
+					<label for Boleto Bancario>Boleto Bancário</label>
+
+					<input type="radio" name="formaDePagamento" id="Samsung Pay">
+					<label for Samsung Pay>Samsung Pay</label>
+
+					<input type="radio" name="formaDePagamento" id="Bankline">
+					<label for Bankline>Bankline</label>
+
+					<input type="radio" name="formaDePagamento" id="AmeDigital">
+					<label for AmeDigital>Ame Digital</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="cepEntrega"> CEP de entrega </label>
+				</td>
+				<td>
+					<input type="number" name="cepEntrega" id ="cepEntrega" placeholder="33333-000"><br>
+				</td>
+			</tr>
+			<tr><td><br></td></tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="Comprar" value="Vender">
+				</td>
+			</tr>
+
+			
+
+		</table>
+	</form>
+
+	<br>
+	<a href="Atv2.web.Index.html">Voltar</a><br>
+
+
+	
+</body>
+
+</html>

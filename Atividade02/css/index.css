@@ -1,0 +1,39 @@
+h1{
+  font-family: Comic Sans MS;
+  text-align: center;
+  color: grey;
+}
+h2{
+  color: black;
+  text-align: center;
+}
+a{
+  font-size: 12pt;
+  margin: 20px;
+  text-decoration: underline;
+  color: blue;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active{
+	font-weight: bold;
+}
+div{
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  border-radius: 5px;
+  margin: 0px 25px; 
+}
+body{
+  background-image: linear-gradient(white,white, lightcyan );
+  background-attachment: fixed;
+  position:absolute;
+  width:99%;
+  height:90%;
+}
