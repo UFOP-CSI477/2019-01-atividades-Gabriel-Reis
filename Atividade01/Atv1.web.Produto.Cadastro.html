@@ -15,16 +15,20 @@
 
 	<form method="post" action="validar.html"> 				<!-- method get (exibe dados do form na url, post é implicito) -->
 		<label for="nome"> Nome</label>
-		<input type="text" name="nome" id ="nome" placeholder="Nome"> <br>
+		<input type="text" name="nome" id ="nome" placeholder="Nome">
 		
 		<label for="preco"> Preço</label>
-		<input type="preco" name="nome" id ="preco" placeholder="R$9.999,99"> <br>
+		<input type="preco" name="nome" id ="preco" placeholder="R$9.999,99"> 
+
+		<br><br>
 		
 		<label for="precoDesc"> Preço com desconto</label>
-		<input type="preco" name="precoDesc" id ="precoDesc" placeholder="R$8.9999,91"><br>
+		<input type="preco" name="precoDesc" id ="precoDesc" placeholder="R$8.9999,91">
 
 		<label for="descricao"> Descrição</label>
-		<input type="text" name="Descricao" id ="descricao" placeholder="Venda de X, que faz Y"><br>
+		<input type="text" name="Descricao" id ="descricao" placeholder="Venda de X, que faz Y">
+
+		<br><br>
 
 		<label for="peso"> Peso </label>
 		<input type="number" name="peso" id ="peso" placeholder="71">
@@ -36,7 +40,9 @@
 			<option value="64">g</option>
 			<option value="653">Kg</option>
 			<option value="1">T</option>
-		</select><br>
+		</select>
+
+		<br><br>
 
 		<label for="estoqueInicial"> Estoque Inicial: </label>
 		<input type="number" name="estoqueInicial" id ="estoqueInicial" placeholder="Estoque Inicial"><br>
@@ -47,6 +53,8 @@
 
 		<input type="radio" id="mercadoInterno" name="Mercado">
 		<label for mercadoInterno>Mercado Interno</label><br>
+
+		<br>
 
 		<label for="Fornecedor"></label>
 		<select>name="fornecedor"
@@ -59,9 +67,10 @@
 			<option value="1324">Sega</option>
 			<option value="64">Sony</option>
 			<option value="145">THQ</option>
-		</select><br>
+		</select>
 
-		<br>
+		<br><br>
+
 		<input type="submit" name="Enviar" value="Cadastrar">
 
 	</form>
