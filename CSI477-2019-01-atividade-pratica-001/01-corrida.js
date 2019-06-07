@@ -74,7 +74,10 @@ function atualizaPosERes(){
     	}
     	tempoAnt = parseFloat(celula[3].innerHTML);
   	}
-}
+
+  	// document.getElementById("Resultado").classList.remove("table-striped");
+  	// document.getElementById("Resultado").classList.add("table-striped");
+  }
 
 function limpaDados(campo, campo1, campo2){
 	campo.value = "";
