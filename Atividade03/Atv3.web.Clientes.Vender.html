@@ -1,89 +1,106 @@
 <!DOCTYPE html>
 <html lang="br" dir="ltr">
 
-
 <head>
 	<meta charset="utf-8">
 	<title>	Games Shop - Vendas</title>
-	<link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-
 <body>
-	
-	<h1> Realizar uma venda</h1>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a href="Atv3.web.Index.html" class="navbar-brand">Games Shop</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="menuPrincipal">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" href="Atv3.web.Index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toogle active" href="#" data-toggle="dropdown">Produto</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Produto.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Produto.Cadastro.html">Cadastro</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Cliente</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Clientes.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Clientes.Vender.html">Vender</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 navbar-right" action="#" method="post" >
+				<input class="form-control mr-sm-2" type="search" name="pesquisa" placeholder="Pesquisar">
+				<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Pesquisar">
+			</form>	
+		</div>
+	</nav>
 
-	<form method="post" action="validar.html">
-			
-		<table>
-			<tr>
-				<td>
-					<label for="Produto">Produto</label>
-				</td>
-				<td>
-					<select>name="Produto"
+	<br>
+
+	<div class="container bg-light sm-1">
+		<br>
+		<form method="post" action="validar.html">
+  			<div class="form-group row">
+  				<label class="col-sm-2 col-form-label" for="Produto">Produto</label>
+  				<div class="col">
+  					<select class="form-control">name="Produto"
 						<option value="000">Produto:</option>
 						<option value="56">Sony PlayStation 4 Slim 1tb + Controle Dualshock</option>
 						<option value="64">Microsoft Xbox One X 1TB 4K+ Controle sem Fio</option>
 						<option value="653">Game Darksiders III 3 + Chaveiro Exclusivo</option>
 					</select>
-				</td>
-			</tr>
+  				</div>
+  			</div>
+  			<div class="form-group row">
+  				<label class="col-sm-2 col-form-label" for="quantidade"> Quantidade </label>
+  				<div class="col">
+	  				<input class="form-control" type="number" min="1" name="quantidade" id ="Quantidade" placeholder="1">
+  				</div>
+  			</div>
+  			<div class="form-group row">
+  				<label class="col-sm-2 col-form-label">Forma de Pagamento:</label>
+					<div class="col">
+					  	<div class="form-check">
+  							<input class="form-check-input" type="radio" name="formaDePagamento" id="Cartao">
+							<label for="Cartao">Cartão</label>
+						</div>
+        				<div class="form-check">
+          					<input class="form-check-input" type="radio" name="formaDePagamento" id="Boleto Bancario">
+							<label for Boleto Bancario>Boleto Bancário</label>
+        				</div>
+        				<div class="form-check">
+          					<input class="form-check-input" type="radio" name="formaDePagamento" id="Samsung Pay">
+							<label for Samsung Pay>Samsung Pay</label>
+        				</div>
+        				<div class="form-check">
+          					<input class="form-check-input" type="radio" name="formaDePagamento" id="Bankline">
+							<label for="Bankline">Bankline</label>
+        				</div>
+        				<div class="form-check">
+          					<input class="form-check-input" type="radio" name="formaDePagamento" id="AmeDigital">
+							<label for="AmeDigital">Ame Digital</label>
+        				</div>
+        			</div>			
+  			</div>
+  			<div class="form-group row">
+  				<label class="col-sm-2 col-form-label" for="cepEntrega"> CEP de entrega </label>
+  				<div class="col">
+  					<input class="form-control" type="number" name="cepEntrega" id ="cepEntrega" placeholder="33333-000">
+  				</div>
+  			</div>
+  			<div class="form-group">
+  				<input class="btn btn-primary mb-2" type="submit" name="Comprar" value="Vender">
+  			</div>
+  		</form>
+  	</div>
 
-			<tr>
-				<td>
-					<label for="quantidade"> Quantidade </label>
-				</td>
-				<td>
-					<input type="number" min="1" name="quantidade" id ="Quantidade" placeholder="1">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label> Forma de Pagamento:</label><br>
-				</td>
-				<td>
-					<input type="radio" name="formaDePagamento" id="Cartao">
-					<label for Cartao>Cartão</label>
-
-					<input type="radio" name="formaDePagamento" id="Boleto Bancario">
-					<label for Boleto Bancario>Boleto Bancário</label>
-
-					<input type="radio" name="formaDePagamento" id="Samsung Pay">
-					<label for Samsung Pay>Samsung Pay</label>
-
-					<input type="radio" name="formaDePagamento" id="Bankline">
-					<label for Bankline>Bankline</label>
-
-					<input type="radio" name="formaDePagamento" id="AmeDigital">
-					<label for AmeDigital>Ame Digital</label>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label for="cepEntrega"> CEP de entrega </label>
-				</td>
-				<td>
-					<input type="number" name="cepEntrega" id ="cepEntrega" placeholder="33333-000"><br>
-				</td>
-			</tr>
-			<tr><td><br></td></tr>
-			<tr>
-				<td></td>
-				<td>
-					<input type="submit" name="Comprar" value="Vender">
-				</td>
-			</tr>
-
-			
-
-		</table>
-	</form>
-
-	<br>
-	<a href="Atv3.web.Index.html">Voltar</a><br>
-
-
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 </body>
 

@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="br" dir="ltr">
 
-
 <head>
 	<meta charset="utf-8">
 	<title>	Games Shop - Listar Clientes</title>
-	<link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-
 <body>
-	
-
-	<h1> Listar Clientes:</h1>
-
-	<table>
-		<style type="text/css">
-				table {
-					width: 80%;
-					align-items: center;
-				}
-
-				table, th, td{
-					font-size: 12pt;
-					border: 1px solid black;
-					border-collapse: collapse;
-					text-align: center;
-				}
-			</style>
-		<thead>
-			<th>Nome</th>
-			<th>CPF</th>
-			<th>Endereço</th>
-			<th>Telefone</th>
-		</thead>
-
-		<tbody>
-			<tr>
-				<td>Gabriel Augusto</td>
-				<td>125.145.258.88</td>
-				<td>Av. Castrelo Branco número 28 apt 51</td>
-				<td>(13) 98818-1234</td>
-			</tr>
-			<tr>
-				<td>João da Silva</td>
-				<td> 125.398.454.52</td>
-				<td>Av. Wilson Alvarenga número 1258</td>
-				<td>(11) 3275-1978</td>
-			</tr>
-			<tr>
-				<td>Maria Pires</td>
-				<td>238.562.145.45</td>
-				<td>Av. Alberto Lima número 303 apt 201</td>
-				<td>(21) 3348-0011</td>
-			</tr>
-
-		</tbody>
-
-	</table>
-
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a href="Atv3.web.Index.html" class="navbar-brand">Games Shop</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="menuPrincipal">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active active" href="Atv3.web.Index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toogle active" href="#" data-toggle="dropdown">Produto</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Produto.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Produto.Cadastro.html">Cadastro</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Cliente</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Clientes.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Clientes.Vender.html">Vender</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 navbar-right" action="#" method="post" >
+				<input class="form-control mr-sm-2" type="search" name="pesquisa" placeholder="Pesquisar">
+				<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Pesquisar">
+			</form>	
+		</div>
+	</nav>
 
 	<br>
-	<a href="Atv3.web.Index.html">Voltar</a><br>
-
 	
+	<div class="container bg-light">
+		<br>
+		<table class="table table-striped table-bordered table-hover">
+			<thead class="thead-dark">
+				<tr>
+					<th>Nome</th>
+					<th>CPF</th>
+					<th>Endereço</th>
+					<th>Telefone</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Gabriel Augusto</td>
+					<td>125.145.258.88</td>
+					<td>Av. Castrelo Branco número 28 apt 51</td>
+					<td>(13) 98818-1234</td>
+				</tr>
+				<tr>
+					<td>João da Silva</td>
+					<td> 125.398.454.52</td>
+					<td>Av. Wilson Alvarenga número 1258</td>
+					<td>(11) 3275-1978</td>
+				</tr>
+				<tr>
+					<td>Maria Pires</td>
+					<td>238.562.145.45</td>
+					<td>Av. Alberto Lima número 303 apt 201</td>
+					<td>(21) 3348-0011</td>
+				</tr>
+				<tr>
+					<td>Wesley Alves</td>
+					<td>526.547.254.54</td>
+					<td>Av. Alberto Lima número 1251 apt 1051</td>
+					<td>(29) 3265-6021</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

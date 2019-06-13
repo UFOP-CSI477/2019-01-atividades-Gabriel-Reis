@@ -1,92 +1,136 @@
 <!DOCTYPE html>
 <html lang="br" dir="ltr">
 
-
 <head>
 	<meta charset="utf-8">
 	<title>	Games Shop - Cadastrar produto</title>
-	<link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
 
 <body>
 	
-	<h1> Cadastro de produtos</h1>
-
-	<form method="post" action="validar.html"> 				
-		<table>
-			<tr>
-				<td><label for="nome"> Nome</label></td>
-				<td><input type="text" name="nome" id ="nome" placeholder="Nome"></td>
-			</tr>
-			<tr>
-				<td><label for="preco"> Preço</label></td>
-				<td><input type="number" min="1" name="nome" id ="preco" placeholder="R$9.999,99"> </td>
-			</tr>
-			<tr>
-				<td><label for="precoDesc"> Preço com desconto</label></td>
-				<td><input type="number" min="1" name="precoDesc" id ="precoDesc" placeholder="R$8.9999,91"></td>
-			</tr>
-			<tr>
-				<td><label for="descricao"> Descrição</label></td>
-				<td><input type="textarea" name="Descricao" id ="descricao" placeholder="Venda de X, que faz Y"></td>
-			</tr>
-			<tr>
-				<td><label for="peso"> Peso </label></td>
-				<td><input type="number" min="1" name="peso" id ="peso" placeholder="71"></td>
-			</tr>
-			<tr>
-				<td><label for="unidade de medida de peso">Unidade de medida de peso</label></td>
-				<td><select>name="unidade de medida de peso"
-					<option value="000">Unidade de medida:</option>
-					<option value="56">mg</option>
-					<option value="64">g</option>
-					<option value="653">Kg</option>
-					<option value="1">T</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td><label for="estoqueInicial"> Estoque Inicial</label></td>
-				<td><input type="number" min="1" name="estoqueInicial" id ="estoqueInicial" placeholder="Estoque Inicial"></td>
-			</tr>
-			<tr>
-				<td><label>Mercado</label></td>
-				<td><input type="radio" id="mercadoInterno" name="Mercado">
-				<label for mercadoInterno>Mercado Interno</label><br>
-				<input type="radio" id="mercadoExterno" name="Mercado">
-				<label for mercadoExterno>Mercado Externo</label></td>
-
-			</tr>
-			<tr>
-				<td><label for="Fornecedor">Fornecedor</label></td>
-				<td><select>name="fornecedor"
-					<option value="000">Fornecedor:</option>
-					<option value="1">Activision</option>
-					<option value="653">Microsoft</option>
-					<option value="178">Nintendo</option>
-					<option value="567">Nordic</option>
-					<option value="832">NVidia</option>
-					<option value="1324">Sega</option>
-					<option value="64">Sony</option>
-					<option value="145">THQ</option>
-				</select></td>
-			</tr>
-			<tr></tr>
-			<tr>
-				<td></td>
-				<td><input type="submit" name="Enviar" value="Cadastrar"></td>
-			</tr>
-		</table>
-
-	</form>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a href="Atv3.web.Index.html" class="navbar-brand">Games Shop</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="menuPrincipal">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" href="Atv3.web.Index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Produto</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Produto.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Produto.Cadastro.html">Cadastro</a>
+					</div>
+				</li>
+				<li class="nav-item active dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Cliente</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Clientes.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Clientes.Vender.html">Vender</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 navbar-right" action="#" method="post" >
+				<input class="form-control mr-sm-2" type="search" name="pesquisa" placeholder="Pesquisar">
+				<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Pesquisar">
+			</form>	
+		</div>
+	</nav>
 
 	<br>
-	<a href="Atv3.web.Index.html">Voltar</a><br>
 
+	<div class="container bg-light sm-1">
+	<br>	
+  		<form method="post" action="validar.html">
+  			<div class="form-group row">
+  				<label for="nome" class="col-sm-1 col-form-label">Nome</label>
+  				<div class="col">
+  					<input class="form-control" type="text" name="nome" id ="nome" placeholder="Nome">
+  				</div>
+  			</div>
+  			<div class="form-group row">
+  				<label for="preco" class="col-sm-1 col-form-label">Preço</label>
+  				<div class="col input-group mb-2">
+  					<div class="input-group-prepend">
+          				<div class="input-group-text">R$</div>
+        			</div>
+  					<input class="form-control" type="number" min="1" name="nome" id ="preco" placeholder="Preço"> 
+  				</div>
+  				<div class="col input-group mb-2">
+  					<div class="input-group-prepend">
+          				<div class="input-group-text">R$</div>
+        			</div>
+  					<input class="form-control" type="number" min="1" name="precoDesc" id ="precoDesc" placeholder="Preço com desconto">
+  				</div>
+  			</div>
+  			<div class="form-group row">
+  				<label for="peso" class="col-sm-1 col-form-label">Peso</label>
+  				<div class="col input-group mb-2">
+  					<input class="form-control" type="number" min="1" name="peso" id ="peso" placeholder="Peso">
+  					<div class="input-group-prepend">
+          					<select class="input-group-text">name="unidade de medida de peso"
+								<option value="000">Unidade de medida:</option>
+								<option value="56">mg</option>
+								<option value="64">g</option>
+								<option value="653">Kg</option>
+								<option value="1">T</option>
+							</select>
+        			</div>
+  				</div>
+  			</div>
+  			<div class="form-group row">
+  				<label for="estoqueInicial" class="col-sm-1 col-form-label">Estoque</label>
+  				<div class="col">
+					<input class="form-control" type="number" min="1" name="estoqueInicial" id ="estoqueInicial" placeholder="Estoque Inicial">
+				</div>
+				<div class="col">
+					<select class="form-control" name="fornecedor">
+						<option value="000">Fornecedor:</option>
+						<option value="1">Activision</option>
+						<option value="653">Microsoft</option>
+						<option value="178">Nintendo</option>
+						<option value="567">Nordic</option>
+						<option value="832">NVidia</option>
+						<option value="1324">Sega</option>
+						<option value="64">Sony</option>
+						<option value="145">THQ</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="estoqueInicial" class="col-sm-1 col-form-label">Mercado</label>
+				<div class="col">
+        			<div class="form-check">
+          				<input class="form-check-input" type="radio" id="mercadoInterno" name="Mercado">
+          				<label for="mercadoInterno">Mercado Interno</label>
+        			</div>
+        			<div class="form-check">
+          				<input class="form-check-input" type="radio" id="mercadoExterno" name="Mercado">
+          				<label for="mercadoExterno">Mercado Externo</label>
+        			</div>
+        		</div>
+  			</div>
+  			<div class="form-group row">
+  				<label for="descricao" class="col-sm-1 col-form-label">Descricao</label>
+  				<div class="col">
+					<textarea  class="form-control" type="textarea" name="Descricao" id ="descricao" placeholder="Descrição" rows="3"></textarea>
+				</div>
+  			</div>
+  			<div class="form-group">
+  				<input class="btn btn-primary mb-2" type="submit" name="Enviar" value="Cadastrar">
+  			</div>
+  		</form>
+
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 </body>
-
-
 </html>
 
 

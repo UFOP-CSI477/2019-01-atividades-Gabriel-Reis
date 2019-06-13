@@ -1,88 +1,140 @@
 <!DOCTYPE html>
 <html lang="br" dir="ltr">
 
-
 <head>
 	<meta charset="utf-8">
-	<title>	Games Shop - Listar Produtos cadastrados </title>
-	<link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.css">
+	<title>	Games Shop - Cadastrar produto</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-	<h1> Produtos cadastrados:</h1>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a href="Atv3.web.Index.html" class="navbar-brand">Games Shop</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="menuPrincipal">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" href="Atv3.web.Index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Produto</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Produto.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Produto.Cadastro.html">Cadastro</a>
+					</div>
+				</li>
+				<li class="nav-item active dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Cliente</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv3.web.Clientes.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv3.web.Clientes.Vender.html">Vender</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 navbar-right" action="#" method="post" >
+				<input class="form-control mr-sm-2" type="search" name="pesquisa" placeholder="Pesquisar">
+				<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Pesquisar">
+			</form>	
+		</div>
+	</nav>
 
-<!-- <div style="width:95%"> -->
-	<table class="table table-responsive" style="width:95%">
-		<thead>
-		</thead>
-		<tbody>
-			<tr>
-				<td>
-					<p align="center"><img width="300px" class="img-fluid" src="./imgs/ps4.png" alt="PS4 slim 1TB"></p>
-				</td>
-				<td>
-					<p align="center"><img width="300px" class="img-fluid" src="./imgs/xbox.png" alt="PS4 slim 1TB"></p>
-				</td>
-				<td>
-					<p align="center"><img width="300px" class="img-fluid" src="./imgs/darksiders3.png" alt="PS4 slim 1TB"></p>
-				</td>	
-			</tr>
-			
-			<tr class="table-info">
-				<td>
-					<h2>Sony PlayStation 4 Slim 1tb + Controle Dualshock</h2>
-				</td>
-				<td>
-					<h2>Microsoft Xbox One X 1TB 4K+ Controle sem Fio</h2>
-				</td>
-				<td>
-					<h2>Game Darksiders III 3 + Chaveiro Exclusivo</h2>
-				</td>
-			</tr>
+	<br>
 
-			<tr class="table-info">
-				<td>
-					<p>R$ 2.399,00 (12x sem juros)</p>
-				</td>
-				<td>
-					<p>R$ 2.345,00 (12x sem juros)</p>
-				</td>
-				<td>
-					<p>R$ 259,00  (12x sem juros)</p>
-				</td>
-			</tr>
+	<div class="container bg-light">
+  		<div class="row">
+    		<div class="col-sm text-center border">
+    			<h3 class="text-center ">Sony PlayStation 4 Slim 1tb + Controle Dualshock</h3>
+    			<p align="center"><img width="200px" src="./imgs/ps4.png" alt="PS4 slim 1TB"></p>
+    			<p>Mais leve e mais fino, o PlayStation 4 tem disco rígido de 1 Tb para tudo o que há de melhor! Combina conteúdo sem igual, experiências de jogos imersivas, todos os seus aplicativos favoritos e recursos exclusivos do PlayStation.</p>
+    			<p>R$ 2.399,00 (12x sem juros)</p>
+				<p>R$ 2.159,10 (10% de off no boleto)</p>
+    		</div>
 
+    		<div class="col-sm text-center border">
+      			<h3 class="text-center">Microsoft Xbox One X 1TB 4K+ Controle sem Fio</h3>
+      			<p align="center"><img width="200px" src="./imgs/xbox.png" alt="PS4 slim 1TB"></p>
+      			<p>Seja o primeiro a experimentar o Xbox One X, projetado para os maiores fãs. No Xbox One X os jogos rodam muito melhor. Com 40% mais poder do que qualquer outro console, experimente os verdadeiros jogos 4K.</p>
+      			<p class="align-middle">R$ 2.345,00 (12x sem juros)</p>
+				<p class="align-middle">R$ 2.110,50 (10% de off no boleto)</p>
+    		</div>
+    		<div class="col-sm text-center border">
+      			<h3 class="text-center">Game Darksiders III 3 + Chaveiro Exclusivo</h3>
+      			<p align="center"><img width="200px" src="./imgs/darksiders3.png" alt="PS4 slim 1TB"></p>
+      			<p>Retorne a uma Terra apocalíptica em Darksiders III, um jogo de ação e aventura cheio de pancadaria, onde os jogadores assumem o papel de Cólera em sua missão de caçar e eliminar os Sete Pecados Capitais.</p>
+      			<p>R$ 259,00  (12x sem juros)</p>
+				<p>R$ 233,10 (10% de off no boleto)</p>
+    		</div>
+  		</div>
+	</div>
 
-			<tr class="table-info">
-				<td>
-					<p>R$ 2.159,10 (10% de off no boleto)</p>
-				</td>
-				<td>
-					<p>R$ 2.110,50 (10% de off no boleto)</p>
-				</td>
-				<td>
-					<p>R$ 233,10 (10% de off no boleto)</p>
-				</td>
-			</tr>
+	<!-- <div class="table-responsive container">
+		<table class="table table-striped table-bordered table-hover table-sm table-responsive-sm">
 
-			<tr class="table-info">
-				<td>
-					<p>Video Game Sony Playstation 4 Slim Hd 1TB Com Controle Dual Shock 4 Preto Sem Fio Nacional Com Tres Jogos + Voucher Psn 3 Meses.</p>
-				</td>
-				<td>
-					<p>Seja o primeiro a experimentar o Xbox One X, projetado para os maiores fãs. No Xbox One X os jogos rodam muito melhor. Com 40% mais poder do que qualquer outro console, experimente os verdadeiros jogos 4K. Os jogos ficam com uma ótima resolução, funcionam sem problemas e carregam rapidamente, mesmo em uma tela de 1080p. O Xbox One X também funciona com todos os seus jogos e acessórios do Xbox One, bem como o Xbox Live, uma rede multiplayer avançada, que lhe oferece mais maneiras de jogar.</p>
-				</td>
-				<td>
-					<p>Retorne a uma Terra apocalíptica em Darksiders III, um jogo de ação e aventura cheio de pancadaria, onde os jogadores assumem o papel de Cólera em sua missão de caçar e eliminar os Sete Pecados Capitais. A mais imprevisível e enigmática dos Quatro Cavaleiros, Cólera deve triunfar onde muitos falharam e trazer equilíbrio às forças que assolam a Terra. Darksiders III é o aguardado terceiro capítulo da aclamada franquia Darksiders.</p>
-				</td>
-			</tr>
+			<tbody>
+				<tr>
+					<td>
+						<p align="center"><img width="200px" src="./imgs/ps4.png" alt="PS4 slim 1TB"></p>
+					</td>
+					<td>
+						<h3 class="text-center">Sony PlayStation 4 Slim 1tb + Controle Dualshock</h3>
+						<span class="align-middle">Video Game Sony Playstation 4 Slim Hd 1TB Com Controle Dual Shock 4 Preto Sem Fio Nacional Com Tres Jogos + Voucher Psn 3 Meses.</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="align-middle">R$ 2.399,00 (12x sem juros)</span>
+					</td>
+					<td>
+						<span class="align-middle">R$ 2.159,10 (10% de off no boleto)</span>
+					</td>
+				</tr>
 
-		</tbody>
-	</table>
-<!-- </div> -->
+				<tr>
+					<td>
+						<p align="center"><img width="200px" src="./imgs/xbox.png" alt="PS4 slim 1TB"></p>
+					</td>
+					<td>
+						<h3 class="text-center">Microsoft Xbox One X 1TB 4K+ Controle sem Fio</h3>
+						<span class="align-middle">Seja o primeiro a experimentar o Xbox One X, projetado para os maiores fãs. No Xbox One X os jogos rodam muito melhor. Com 40% mais poder do que qualquer outro console, experimente os verdadeiros jogos 4K. Os jogos ficam com uma ótima resolução, funcionam sem problemas e carregam rapidamente, mesmo em uma tela de 1080p. O Xbox One X também funciona com todos os seus jogos e acessórios do Xbox One, bem como o Xbox Live, uma rede multiplayer avançada, que lhe oferece mais maneiras de jogar.</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="align-middle">R$ 2.345,00 (12x sem juros)</span>
+					</td>
+					<td>
+						<span class="align-middle">R$ 2.110,50 (10% de off no boleto)</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p align="center"><img width="200px" src="./imgs/darksiders3.png" alt="PS4 slim 1TB"></p>
+					</td>		
+					<td>
+						<h3 class="text-center">Game Darksiders III 3 + Chaveiro Exclusivo</h3>
+						<span class="align-middle">Retorne a uma Terra apocalíptica em Darksiders III, um jogo de ação e aventura cheio de pancadaria, onde os jogadores assumem o papel de Cólera em sua missão de caçar e eliminar os Sete Pecados Capitais. A mais imprevisível e enigmática dos Quatro Cavaleiros, Cólera deve triunfar onde muitos falharam e trazer equilíbrio às forças que assolam a Terra. Darksiders III é o aguardado terceiro capítulo da aclamada franquia Darksiders.</span>
+					</td>				
+				</tr>
+				<tr>
+					<td>
+						<span class="align-middle">R$ 259,00  (12x sem juros)</span>
+					</td>
+					<td>
+						<span class="align-middle">R$ 233,10 (10% de off no boleto)</span>
+					</td>
+				</tr>
 
+			</tbody>
+		</table>
+	</div> -->
+	<br>
 
-	<a href="Atv3.web.Index.html">Voltar</a><br>
-
-	</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+</body>
 </html>
+
+
