@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>	Games Shop - Cadastrar produto</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a href="Atv4.web.Index.html" class="navbar-brand">Games Shop</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="menuPrincipal">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" href="Atv4.web.Index.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Produto</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv4.web.Produto.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv4.web.Produto.Cadastro.html">Cadastro</a>
+					</div>
+				</li>
+				<li class="nav-item active dropdown">
+					<a class="nav-link dropdown-toogle" href="#" data-toggle="dropdown">Cliente</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Atv4.web.Clientes.Listar.html">Listar</a>
+						<a class="dropdown-item" href="Atv4.web.Clientes.Vender.html">Vender</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 navbar-right" action="#" method="post" >
+				<input class="form-control mr-sm-2" type="search" name="pesquisa" placeholder="Pesquisar">
+				<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Pesquisar">
+			</form>	
+		</div>
+	</nav>
+	<h2 class="text-center text-white bg-dark">Cadastrar produto</h2>
+	<br>
+
+	<div class="container bg-light sm-1">
+		<br>
+  		<form method="post" name="cadastrar">
+  			<div class="form-group row">
+  				<label for="nome" class="col-sm-1 col-form-label">Nome</label>
+  				<div class="col">
+  					<input class="form-control" type="text" name="nome" id ="nome" placeholder="Nome">
+  					<div id="alertaNome" style="display: none" class="alert alert-danger">
+	         			<span>Digite o nome do produto!</span>
+	         		</div>
+  				</div>
+  			</div>
+
+  			<div class="form-group row">
+  			<label for="preco" class="col-sm-1 col-form-label">Preço</label>
+  				<div class="col mb-0">
+	  				<div class="form-group row mb-0">		
+		  				<div class="col input-group mb-0">
+		  					<div class="input-group-prepend">
+		          				<div class="input-group-text">R$</div>
+		        			</div>
+		  					<input class="form-control" type="number" min="1" name="preco" id ="preco" placeholder="Preço"> 
+		  				</div>
+	  				</div>
+					<div class="row m-0 p-0">
+		  				<div id="alertaPreco" style="display: none" class="col alert alert-danger mb-2">
+			         		<span>Digite um preço válido!</span>
+			         	</div>
+			         </div>
+  				</div>
+
+	  			<div class="col mb-0">
+		  			<div class="form-group row mb-0">		
+			  			<div class="col input-group mb-0">
+			  				<div class="input-group-prepend">
+			          			<div class="input-group-text">R$</div>
+			        		</div>
+		  					<input class="form-control" type="number" min="1" name="precoDesc" id ="precoDesc" placeholder="Preço com desconto">
+			  			</div>
+		  			</div>
+					<div class="row m-0 p-0">
+			  			<div id="alertaPrecoDesc" style="display: none" class="col alert alert-danger">
+			        		<span>Digite um preço com desconto válido!</span>
+				       	</div>
+				    </div>
+				</div>
+  			</div>
+
+
+  			<div class="form-group row">
+  			<label for="peso" class="col-sm-1 col-form-label">Peso</label>
+  				<div class="col mb-0">
+	  				<div class="form-group row mb-0">		
+		  				<div class="col input-group mb-0">
+		  					<input class="form-control" type="number" min="1" name="peso" id ="peso" placeholder="Peso">
+		  				</div>
+	  				</div>
+					<div class="row m-0 p-0">
+		  				<div id="alertaPeso" style="display: none" class="col m-0 alert alert-danger">
+							<span>Digite um peso válido!</span>
+						</div>	
+			         </div>
+  				</div>
+
+	  			<div class="col mb-0">
+		  			<div class="form-group row mb-0">		
+			  			<div class="col input-group mb-0">
+			  				<select class="form-control" name="unidadeDePeso">
+								<option value="000">Unidade de medida:</option>
+								<option value="56">mg</option>
+								<option value="64">g</option>
+								<option value="653">Kg</option>
+								<option value="1">T</option>
+							</select>
+			  			</div>
+		  			</div>
+					<div class="row m-0 p-0">
+			  			<div id="alertaUnidadePeso" style="display: none" class="alert alert-danger col">
+						    <span>Escolha uma unidade de peso!</span>
+						</div>
+				    </div>
+				</div>
+  			</div>
+
+  			<div class="form-group row">
+  				<label for="peso" class="col-sm-1 col-form-label">Estoque</label>
+  				<div class="col mb-0">
+	  				<div class="form-group row mb-0">		
+		  				<div class="col input-group mb-0">
+		  					<input class="form-control" type="number" min="1" name="estoqueInicial" id ="estoqueInicial" placeholder="Estoque Inicial">
+		  				</div>
+	  				</div>
+					<div class="row m-0 p-0">
+		  				<div id="alertaEstoque" style="display: none" class="alert alert-danger col">
+	         				<span>Digite uma quantidade válida de estoque !</span>
+						</div>
+			         </div>
+  				</div>
+
+	  			<div class="col mb-0">
+		  			<div class="form-group row mb-0">		
+			  			<div class="col input-group mb-0">
+			  				<select class="form-control" name="fornecedor">
+								<option value="000">Fornecedor:</option>
+								<option value="1">Activision</option>
+								<option value="653">Microsoft</option>
+								<option value="178">Nintendo</option>
+								<option value="567">Nordic</option>
+								<option value="832">NVidia</option>
+								<option value="1324">Sega</option>
+								<option value="64">Sony</option>
+								<option value="145">THQ</option>
+							</select>
+			  			</div>
+		  			</div>
+					<div class="row m-0 p-0">
+			  			<div id="alertaFornecedor" style="display: none" class="alert alert-danger col">
+	         				<span>Escolha um fornecedor!</span>
+	         			</div>
+				    </div>
+				</div>
+  			</div>
+
+			<div class="form-group row">
+				<label for="estoqueInicial" class="col-sm-1 col-form-label">Mercado</label>
+				<div class="col-">
+        			<div class="form-check">
+          				<input class="form-check-input" type="radio" id="mercadoInterno" name="Mercado">
+          				<label for="mercadoInterno">Mercado Interno</label>
+        			</div>
+        			<div class="form-check">
+          				<input class="form-check-input" type="radio" id="mercadoExterno" name="Mercado">
+          				<label for="mercadoExterno">Mercado Externo</label>
+        			</div>
+        		</div>
+        		<div class="col ml-0">
+	        		<div id="alertaMercado" style="display: none" class="alert alert-danger">
+		         		<span>Escolha o mercado!</span>
+		         	</div>
+	         	</div>
+  			</div>
+		
+  			<div class="form-group row">
+  				<label for="nome" class="col-sm-1 col-form-label">Descricao</label>
+  				<div class="col">
+  					<input class="form-control" type="text" name="descricao" id ="descricao" placeholder="Descricao">
+  					<div id="alertaDescricao" style="display: none" class="alert alert-danger col">
+			         		<span>Digite uma descrição válida!</span>
+			         	</div>
+  				</div>
+  			</div>
+
+  			<div class="form-group">
+  				<button type="button" onclick="cadastrarProduto()" class="btn btn-primary">Cadastrar</button>
+  			</div>
+  		</form>
+
+	</div>
+
+	<script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+</body>
+</html>
+
+
